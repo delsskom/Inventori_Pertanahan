@@ -14,9 +14,24 @@
 
         body {
             margin: 0;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
             color: white;
             overflow-x: hidden;
+
+            background-image: url('/images/atr.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* overlay gelap */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
         }
 
         /* floating shapes */
@@ -25,6 +40,7 @@
             border-radius: 50%;
             background: rgba(255,255,255,0.08);
             animation: float 12s infinite ease-in-out;
+            z-index: 0;
         }
 
         .circle.one {
@@ -56,10 +72,11 @@
             justify-content: center;
             padding: 20px;
             position: relative;
+            z-index: 1;
         }
 
         .hero-box {
-            background: rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.15);
             backdrop-filter: blur(14px);
             padding: 45px;
             border-radius: 22px;
@@ -67,7 +84,6 @@
             text-align: center;
             box-shadow: 0 25px 60px rgba(0,0,0,0.4);
             animation: fadeIn 1.2s ease;
-            z-index: 1;
         }
 
         @keyframes fadeIn {
@@ -97,7 +113,7 @@
             margin: 20px 0 35px;
         }
 
-        /* feature icons */
+        /* features */
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -106,7 +122,7 @@
         }
 
         .feature-box {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.18);
             padding: 15px;
             border-radius: 14px;
             font-size: 14px;
@@ -115,7 +131,7 @@
 
         .feature-box:hover {
             transform: translateY(-6px);
-            background: rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.28);
         }
 
         /* buttons */
@@ -131,22 +147,12 @@
         }
 
         .btn-primary {
-            background: #2ecc71;
+            background: #888f05;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #27ae60;
-            transform: scale(1.05);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: #2c3e50;
-        }
-
-        .btn-secondary:hover {
-            background: #ecf0f1;
+            background: #888f05;
             transform: scale(1.05);
         }
 
@@ -159,7 +165,7 @@
 </head>
 <body>
 
-<!-- floating decoration -->
+<!-- dekorasi floating -->
 <div class="circle one"></div>
 <div class="circle two"></div>
 
@@ -173,24 +179,20 @@
             Sistem informasi berbasis web untuk membantu pengelolaan
             inventaris barang kantor secara <b>efisien</b>, <b>terstruktur</b>,
             dan <b>akurat</b>.  
-            Dikembangkan menggunakan <b>Laravel</b> sebagai bagian dari
-            kegiatan <b>Magang Mahasiswa Ilmu Komputer</b>.
         </p>
 
         <div class="features">
             <div class="feature-box">Manajemen Data Barang</div>
             <div class="feature-box">Barang Masuk & Keluar</div>
             <div class="feature-box">Laporan Inventori</div>
-            <div class="feature-box">Akses Admin</div>
         </div>
 
         <div class="hero-buttons">
-            <a href="/barang" class="btn-primary"> Lihat Data Barang</a>
+            <a href="/barang" class="btn-primary">Lihat Data Barang</a>
         </div>
 
-        <footer>
-            © {{ date('Y') }} | Mahasiswa Ilmu Komputer – Magang  
-            <br>Kantor Pertanahan Kota Kendari
+        <footer> 
+            <br>© {{ date('Y') }} | Kantor Pertanahan Kota Kendari
         </footer>
 
     </div>
