@@ -83,7 +83,7 @@
         /* BUTTON */
         .btn-add {
             display: inline-block;
-            background: #2ecc71;
+            background: #888f05;
             color: white;
             padding: 12px 20px;
             border-radius: 12px;
@@ -93,7 +93,7 @@
         }
 
         .btn-add:hover {
-            background: #27ae60;
+            background: #888f05;
         }
 
         /* TABLE */
@@ -219,10 +219,6 @@
             </tr>
             @endforeach
         </table>
-
-        <footer>
-            © {{ date('Y') }} | Sistem Inventori – Kantor Pertanahan Kota Kendari
-        </footer>
 
     </div>
 </div>

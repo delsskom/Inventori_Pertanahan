@@ -115,7 +115,7 @@
 
         .btn-save {
             flex: 1;
-            background: #2ecc71;
+            background: #888f05;
             color: white;
             padding: 12px;
             border: none;
@@ -125,7 +125,7 @@
         }
 
         .btn-save:hover {
-            background: #27ae60;
+            background: #888f05;
         }
 
         .btn-back {
@@ -202,14 +202,10 @@
             </div>
 
             <div class="btn-group">
-                <button type="submit" class="btn-save">💾 Simpan</button>
+                <button type="submit" class="btn-save">Simpan</button>
                 <a href="/barang" class="btn-back">Batal</a>
             </div>
         </form>
-
-        <footer>
-            © {{ date('Y') }} | Sistem Inventori – Kantor Pertanahan Kota Kendari
-        </footer>
 
     </div>
 </div>
