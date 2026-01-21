@@ -178,10 +178,10 @@
         </p>
 
         <div class="features">
-            <div class="feature-box">📋 Manajemen Data Barang</div>
-            <div class="feature-box">📦 Barang Masuk & Keluar</div>
-            <div class="feature-box">📊 Laporan Inventori</div>
-            <div class="feature-box">🔐 Akses Admin</div>
+            <div class="feature-box">Manajemen Data Barang</div>
+            <div class="feature-box">Barang Masuk & Keluar</div>
+            <div class="feature-box">Laporan Inventori</div>
+            <div class="feature-box">Akses Admin</div>
         </div>
 
         <div class="hero-buttons">
