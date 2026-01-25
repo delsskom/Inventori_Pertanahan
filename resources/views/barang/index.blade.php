@@ -171,7 +171,6 @@
     <div>
         <a href="/">Beranda</a>
         <a href="/barang">Data Barang</a>
-        <a href="/barang/create">Tambah Barang</a>
     </div>
 </div>
 
